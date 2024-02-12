@@ -1,6 +1,8 @@
 @import "../../../../assets/styles/varaiables.scss";
 
 .wrapper {
+  text-align: center;
+
   .pre-title {
     font-size: 0.75rem;
     color: $color-secondary;
@@ -19,7 +21,39 @@
     flex-shrink: 0;
     border-radius: 3px;
     border: 1px solid #71717a;
-
+    padding-left: 10px;
     background: #27272c;
+  }
+
+  .group {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 21px;
+
+    .quantity {
+      color: $color-neutral;
+      font-weight: 400;
+      line-height: normal;
+      margin-right: 20px;
+    }
+
+    .btn {
+      width: 111px;
+      height: 38px;
+      flex-shrink: 0;
+      background-color: $color-secondary;
+      font-weight: 700;
+      line-height: normal;
+      color: $color-primary;
+      border: none;
+      border-radius: 3px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .title {
+      font-size: 5rem;
+    }
   }
 }

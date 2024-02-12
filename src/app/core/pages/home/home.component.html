@@ -1,2 +1,16 @@
 <app-header></app-header>
-<!-- <p>home works!</p> -->
+
+<section class="wrapper">
+  <div class="content">
+    @for (item of [1,1,1,1]; track item) {
+    <app-card></app-card>
+
+    } @empty {
+    <p>Você ainda não possui notas.</p>
+    }
+  </div>
+
+  <button (click)="open()">click me</button>
+</section>
+
+<app-footer></app-footer>

@@ -1,0 +1,27 @@
+.wrapper {
+  margin-top: 51px;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  @media (min-width: 1024px) {
+    .content {
+      flex-direction: row;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  }
+
+  @media (min-width: 1180px) {
+    .content {
+      flex-wrap: nowrap;
+    }
+  }
+}
