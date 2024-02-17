@@ -23,14 +23,15 @@ describe('HeaderComponent', () => {
     expect('test').toBe(searchTerm);
   });
 
-  // it('should call onChange when search input value changes', () => {
-  //   const searchTerm = 'new term';
-  //   const searchInput = fixture.debugElement.query(
-  //     By.css('input')
-  //   ).nativeElement;
-  //   searchInput.value = searchTerm;
-  //   searchInput.dispatchEvent(new Event('input'));
+  it('should call onChange when search input value changes', () => {
+    const searchTerm = 'new term';
+    const searchInput = fixture.debugElement.query(
+      By.css('input')
+    ).nativeElement;
+    searchInput.value = searchTerm;
+    searchInput.dispatchEvent(new Event('input'));
+    component.onChange(searchTerm);
 
-  //   expect(component.searchTerm).toBe(searchTerm);
-  // });
+    expect(component.searchTerm).toBe(searchTerm);
+  });
 });

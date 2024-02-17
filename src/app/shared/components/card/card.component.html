@@ -1,12 +1,10 @@
 <div class="card">
   <p class="text">
-    Lorem ipsum dolor sit amet, conseadipiscing elit. Pellentesque dictum non
-    magna et facilisis. Curabitur ac quam vel odio auctor molestie. Pellentesque
-    in est magna. In magna auctor consec.
+    {{ text }}
   </p>
 
   <div class="btn-group">
-    <button class="btn">Editar</button>
-    <button class="btn">Excluir</button>
+    <button class="btn edit" (click)="onSubmit('edit')">Editar</button>
+    <button class="btn delete" (click)="onSubmit('delete')">Excluir</button>
   </div>
 </div>
